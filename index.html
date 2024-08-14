@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card </title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        width: 90%;
+        max-width: 1200px;
+    }
+    .card {
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:active {
+        transform: translateY(0);
+    }
+
+    .card h3 {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #333;
+    }
+
+    .card p {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+</style>
+<body>
+    <div class="card-container">
+        <div class="card" onclick="openPage('king.jpg')">
+            <h3>Card 1</h3>
+            <p>The king card is the oldest and most universal court card.</p>
+        </div>
+        <div class="card" onclick="openPage('queen.jpg')">
+            <h3>Card 2</h3>
+            <p>The queen is a playing card with a picture of a queen on it.</p>
+        </div>
+        <div class="card" onclick="openPage('ace.png')">
+            <h3>Card 3</h3>
+            <p>An ace is a playing card, die or domino with a single pip.</p>
+        </div>
+        <div class="card" onclick="openPage('joker.webp')">
+            <h3>Card 4</h3>
+            <p>The joker is a wild card in many card games.</p>
+        </div>
+        <div class="card" onclick="openPage('Playing_card_heart_10.svg.png')">
+            <h3>Card 5</h3>
+            <p>The ten is a playing card with the value of ten.</p>
+        </div>
+        <div class="card" onclick="openPage('download (1).png')">
+            <h3>Card 6</h3>
+            <p>The nine is a playing card with the value of nine.</p>
+    </div>
+    <div class="card" onclick="openPage('PLAYING_CARD_EIGHT_OF_SPADES.svg')">
+        <h3>Card 7</h3>
+        <p>The eight is a playing card with the value of eight.</p>
+    </div>
+    <div class="card" onclick="openPage('images (1).jpeg')">
+        <h3>Card 8</h3>
+        <p>The seven is a playing card with the value of seven.</p>
+    </div>
+    <div class="card" onclick="openPage('Playing_card_heart_6.svg.png')">
+        <h3>Card 9</h3>
+        <p>The six is a playing card with the value of six.</p>
+    </div>
+    <div class="card" onclick="openPage('five-of-clubs-playing-card-2NH6940.jpg')">
+        <h3>Card 10</h3>
+        <p>The five is a playing card with the value of five.</p>
+
+
+    <script>
+        function openPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
